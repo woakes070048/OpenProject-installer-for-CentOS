@@ -75,8 +75,6 @@ su - openproject -c "echo $SCRIPT | bash -l"
 # Grant permission to Passenger
 chmod o+x "/opt/openproject" 
 
-cd /opt/openproject/openproject/
-
 # Create the plugin gems file
 read -d '' PLUGINS <<"EOF"
 gem "pdf-inspector", "~>1.0.0", :group => :test
