@@ -60,10 +60,6 @@ read -d '' SCRIPT <<"EOF"
 	rvm install 2.1.0 
 	gem install bundler
 
-	# Verifying 
-	echo Installed bundle version (should be 1.5.1 or higher): 
-	bundle --version
-
 	# Install OpenProject
 	git clone https://github.com/opf/openproject.git
 	cd openproject
